@@ -42,3 +42,5 @@ context.setStrategy(new ConcreteStrategyB())
 context.executeStrategy(data)
 
 ```
+
+@import './ex1_paymentStrategy.md'
