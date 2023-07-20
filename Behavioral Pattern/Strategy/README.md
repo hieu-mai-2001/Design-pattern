@@ -1,11 +1,14 @@
-- [1. Examples](#1-examples)
-- [2. Structure](#2-structure)
-- [3. Pseudocode](#3-pseudocode)
-- [4. Pros and Cons](#4-pros-and-cons)
-  - [4.1. Pros](#41-pros)
-  - [4.2. Cons](#42-cons)
+- [1. Intent](#1-intent)
+- [2. Examples](#2-examples)
+- [3. Structure](#3-structure)
+- [4. Pseudocode](#4-pseudocode)
+- [5. Pros and Cons](#5-pros-and-cons)
+  - [5.1. Pros](#51-pros)
+  - [5.2. Cons](#52-cons)
 
-# 1. Examples
+# 1. Intent
+**Strategy** is a behavioral design pattern that lets you define a family of algorithms, đặt mỗi thuật toán vào một lớp riêng biệt và làm cho các đối tượng của chúng có thể thay thế được lẫn nhau.
+# 2. Examples
 
 - **Thuật toán sắp xếp:** Như đã thể hiện trong ví dụ trước, bạn có thể sử dụng Mẫu Chiến lược để triển khai các thuật toán sắp xếp khác nhau như Bubble Sort, Merge Sort và Quick Sort.
 
@@ -16,10 +19,10 @@
 - **Đặt vé du lịch:** Trong ứng dụng đặt vé du lịch, bạn có thể có nhiều chiến lược giá cả, chẳng hạn như Giá thường, Giá giảm giá và Giá ngày lễ. Mẫu Chiến lược có thể giúp bạn áp dụng các chiến lược giá cả khác nhau dựa trên ngày đi du lịch và các yếu tố khác.
 
 
-# 2. Structure
+# 3. Structure
 ![Alt text](image-1.png)
 
-# 3. Pseudocode
+# 4. Pseudocode
 
 ```php
 # Step 1: Create the Strategy Interface or Abstract Class
@@ -66,8 +69,8 @@ context.executeStrategy(data)
 
 ```
 
-# 4. Pros and Cons
-## 4.1. Pros
+# 5. Pros and Cons
+## 5.1. Pros
 - **Flexibility and Reusability:** 
   - Mẫu chiến lược cho phép chuyển đổi (Bubble Sort, Quick Sort, Merge Sort). Chúng ta có thể thêm thuật toán mới mà không cần chỉnh sửa
   - Có thể tái sử dụng thuật toán sắp xếp ở nhiều chỗ khác, tăng tính năng tái sử dụng của mã nguồn.
@@ -81,7 +84,7 @@ context.executeStrategy(data)
 - **Open/Closed Principle:**
   - Mẫu Chiến lược tuân thủ nguyên tắc Mở/Rộng. Chúng ta có thể thêm các chiến lược sắp xếp mới (các chiến lược mới được mở rộng) mà không cần sửa đổi mã nguồn hiện có sử dụng lớp SortContext (mã nguồn hiện có được đóng rồi).
 
-## 4.2. Cons
+## 5.2. Cons
 - **Increased Complexity:**
   - Sử dụng Mẫu Chiến lược đồng nghĩa với việc thêm nhiều lớp mới như BubbleSort, QuickSort, MergeSort và SortContext, làm tăng độ phức tạp của mã nguồn so với việc triển khai đơn giản của một thuật toán sắp xếp.
   - Đối với các ứng dụng quy mô nhỏ chỉ có một vài phương pháp sắp xếp, Mẫu Chiến lược có thể tạo thêm độ phức tạp không cần thiết.
