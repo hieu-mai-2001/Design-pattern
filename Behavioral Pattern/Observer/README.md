@@ -1,5 +1,15 @@
+- [1. Intent](#1-intent)
+- [2. Example](#2-example)
+- [3. Structure](#3-structure)
+- [4. Pseudocode](#4-pseudocode)
+- [5. Pros and Cons](#5-pros-and-cons)
+  - [5.1. Example: Messaging System with Observer Pattern](#51-example-messaging-system-with-observer-pattern)
+  - [5.2. Pros](#52-pros)
+  - [5.3. Cons](#53-cons)
+
 # 1. Intent
 **Observer** là một mẫu thiết kế hành vi cho phép bạn xác định cơ chế đăng ký để thông báo cho nhiều đối tượng về bất kỳ sự kiện nào xảy ra với đối tượng mà chúng đang theo dõi.
+![Intent](image-1.png)
 
 # 2. Example
 
@@ -88,9 +98,9 @@ subject.setData("Updated Data")
 
 ```
 # 5. Pros and Cons
-## Example: Messaging System with Observer Pattern
+## 5.1. Example: Messaging System with Observer Pattern
 Trong ví dụ này, chúng ta sẽ triển khai một hệ thống tin nhắn, trong đó người dùng có thể đăng ký đăng ký vào các kênh khác nhau và nhận tin nhắn khi có tin nhắn mới được đăng vào các kênh đó.
-## 5.1. Pros
+## 5.2. Pros
 - Flexibility and Reusability:
   - Mẫu Observer cho phép người dùng đăng ký vào các kênh khác nhau và nhận tin nhắn mà không cần thay đổi logic cốt lõi của hệ thống tin nhắn. Các kênh mới có thể được thêm vào trong tương lai, và người dùng có thể đăng ký vào chúng mà không ảnh hưởng đến mã nguồn hiện tại.
   - Hệ thống tin nhắn có thể được sử dụng trong các ứng dụng khác nhau, và người dùng có thể đăng ký vào các kênh khác nhau dựa trên sở thích của họ, thúc đẩy tính tái sử dụng mã nguồn.
@@ -103,7 +113,7 @@ Trong ví dụ này, chúng ta sẽ triển khai một hệ thống tin nhắn, 
 - Open/Closed Principle:
   - Mẫu Observer tuân theo nguyên tắc mở/đóng. Các kênh mới có thể được thêm vào mà không cần sửa đổi mã nguồn hiện tại của hệ thống tin nhắn, thúc đẩy tính mở rộng.
   
-## 5.1. Cons
+## 5.3. Cons
 -  Increased Complexity:
    -  Triển khai Mẫu Observer thêm nhiều lớp, chẳng hạn như Subject (hệ thống tin nhắn) và Observers (người dùng), có thể làm cho mã nguồn phức tạp hơn so với một hệ thống tin nhắn đơn giản không có Observer.
    -  Quản lý đăng ký và thông báo có thể đòi hỏi mã nguồn và logic bổ sung, làm tăng tính phức tạp tổng thể.

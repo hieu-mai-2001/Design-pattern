@@ -1,4 +1,4 @@
-###Example: Sorting Algorithms
+### Example: Sorting Algorithms
 In this example, we'll demonstrate how to implement different sorting algorithms (e.g., Bubble Sort, Quick Sort, Merge Sort) using the Strategy Pattern. This will allow us to switch between sorting algorithms without modifying the client code.
 
 1. Create the Strategy interface:

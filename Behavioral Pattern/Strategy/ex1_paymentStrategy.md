@@ -1,4 +1,4 @@
-###Example: Payment Strategy
+### Example: Payment Strategy
 Let's say we want to implement different payment methods for an online store: Credit Card, PayPal, and Bank Transfer. We'll use the Strategy Pattern to achieve this.
 
 1. Create the Strategy interface:
