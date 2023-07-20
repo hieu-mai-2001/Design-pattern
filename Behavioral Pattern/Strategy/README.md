@@ -1,5 +1,5 @@
 
-#Examples
+# Examples
 
 - **Thuật toán sắp xếp:** Như đã thể hiện trong ví dụ trước, bạn có thể sử dụng Mẫu Chiến lược để triển khai các thuật toán sắp xếp khác nhau như Bubble Sort, Merge Sort và Quick Sort.
 
@@ -10,10 +10,10 @@
 - **Đặt vé du lịch:** Trong ứng dụng đặt vé du lịch, bạn có thể có nhiều chiến lược giá cả, chẳng hạn như Giá thường, Giá giảm giá và Giá ngày lễ. Mẫu Chiến lược có thể giúp bạn áp dụng các chiến lược giá cả khác nhau dựa trên ngày đi du lịch và các yếu tố khác.
 
 
-#Structure
+# Structure
 ![Alt text](image-1.png)
 
-#Pseudocode
+# Pseudocode
 
 ```php
 # Step 1: Create the Strategy Interface or Abstract Class
@@ -60,8 +60,8 @@ context.executeStrategy(data)
 
 ```
 
-#Pros and Cons
-##Pros
+# Pros and Cons
+## Pros
 - **Flexibility and Reusability:** 
   - Mẫu chiến lược cho phép chuyển đổi (Bubble Sort, Quick Sort, Merge Sort). Chúng ta có thể thêm thuật toán mới mà không cần chỉnh sửa
   - Có thể tái sử dụng thuật toán sắp xếp ở nhiều chỗ khác, tăng tính năng tái sử dụng của mã nguồn.
