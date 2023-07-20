@@ -1,4 +1,4 @@
-```
+```php
 # Step 1: Create the Strategy Interface or Abstract Class
 interface Strategy {
     method execute(data)  # The method that represents the behavior or algorithm
